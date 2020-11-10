@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION ['usuario'])) {
+if (!isset($_SESSION ['administrador'])) {
     header("location:../../index.php?x=2");
 }
 if (!isset($_REQUEST ['pg'])) {
@@ -12,7 +12,7 @@ if (!isset($_REQUEST ['pg'])) {
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <link rel="Stylesheet" type="text/css" href="../css/Estilos.css">
+        <link rel="Stylesheet" type="text/css" href="../../Presentacion/css/Estilos.css">
         <title>Principal</title>
     </head>
 
@@ -20,59 +20,42 @@ if (!isset($_REQUEST ['pg'])) {
 
          <header> 
 
-            <div id="header">
+                 <div id="header">
                 <nav>
                     <ul class="nav">
-                        <li><a href="./inicio.php">Inicio</a></li>
+                        <li><a href="inicio.php">Inicio</a></li>
                         <li><a >Pos</a>
                         <ul>
                           <li><a href="fmrPos.php">Crear Pos</a></li>
-                          <li><a href="fmrListarPos.PHP">Lista Pos</a></li> 
+                          <li><a href="fmrConsultarPos.PHP">Consultar Pos</a></li> 
                            
                         </ul>
                         </li>
                         <li><a >Comercial</a>
                         <ul>
                         <li><a href="fmrComercial.php">Crear Comercial</a></li>
-                        <li> <a href="fmrListarComercial.php">Lista Comercial </a></li> 
+                        <li> <a href="fmrConsultarComercial.php">Consultar Comercial </a></li> 
                         
                         </ul>
                         </li>
                         <li><a >Restaurante</a>
                         <ul>   
                         <li><a href="fmrRestaurante.php">Crear Restaurante</a></li>
-                        <li><a href="fmrListarRestaurante.php">Lista Restaurante</a></li>
+                        <li><>Consultar Restaurante</li>
                         </ul>
                         </li>
-                        <li><a >Agente Onboarding</a>
-                           <ul>
-                               <li><a href="fmrAgenteOnboarding.php">Crear Agente Onboarding</a></li>
-                               <li><a href="fmrListarAgente.php">Lista Agente Onboarding </a></li> 
-                           </ul>
-                        </li>
-                            
+                                                   
                          <li><a >Onboarding</a>
                          <ul>
                         <li><a href="fmrOnboarding.php">Crear Onboarding</a></li>
-                        <li><a href="fmrListarOnboarding.php">Lista Onboarding </a></li> 
+                        <li><a href="fmrConsultarOnboarding.php">Consultar Onboarding </a></li> 
                         </ul>
                          </li>
-                        <li><a >Reportes</a>
-                        <ul>
-                        <li><a href="fmrConsultarAgenteOnb.php">Reporte Agente Onboarding</a></li>         
-                        <li><a href="fmrConsultarComercial.php">Reporte Comercial </a></li>
-                        <li><a href="fmrConsutarOnboarding.php">Reporte Onboarding </a></li>
-                        <li><a href="fmrConsultarPos.PHP">Reporte Pos</a></li>
-                                           
-                        </ul>
-                        </li>
-                        <li><a href="fmrUsuario.php" >Crea usuario</a> </li>
-                         
-                        <li><a href="../../index.php">Salir</a></li>
+                       
+                        <li><a href="../../Index.php">Salir</a></li>
                     </ul>
                 </nav>
             </div>
-
          </header>
 <br>
 <br>
