@@ -2,15 +2,10 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
-    <link rel="stylesheet" href="../CSS/estilos.css">
+<link rel="Stylesheet" type="text/css" href="../css/Estilos.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-<!-- jQuery and JS bundle w/ Popper.js -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-	
     <title>registrar usuario</title>
 	
 
@@ -33,9 +28,65 @@
     }
     </script> -->
 <body>
+    
+   <header> 
 
-   
-   
+            <div id="header">
+                <nav>
+                    <ul class="nav">
+                        <li><a href="./inicio.php">Inicio</a></li>
+                        <li><a >Pos</a>
+                        <ul>
+                          <li><a href="fmrPos.php">Crear Pos</a></li>
+                          <li><a href="fmrListarPos.PHP">Lista Pos</a></li> 
+                           
+                        </ul>
+                        </li>
+                        <li><a >Comercial</a>
+                        <ul>
+                        <li><a href="fmrComercial.php">Crear Comercial</a></li>
+                        <li> <a href="fmrListarComercial.php">Lista Comercial </a></li> 
+                        
+                        </ul>
+                        </li>
+                        <li><a >Restaurante</a>
+                        <ul>   
+                        <li><a href="fmrRestaurante.php">Crear Restaurante</a></li>
+                        <li><a href="fmrListarRestaurante.php">Lista Restaurante</a></li>
+                        </ul>
+                        </li>
+                        <li><a >Agente Onboarding</a>
+                           <ul>
+                               <li><a href="fmrAgenteOnboarding.php">Crear Agente Onboarding</a></li>
+                               <li><a href="fmrListarAgente.php">Lista Agente Onboarding </a></li> 
+                           </ul>
+                        </li>
+                            
+                         <li><a >Onboarding</a>
+                         <ul>
+                        <li><a href="fmrOnboarding.php">Crear Onboarding</a></li>
+                        <li><a href="fmrListarOnboarding.php">Lista Onboarding </a></li> 
+                        </ul>
+                         </li>
+                        <li><a >Reportes</a>
+                        <ul>
+                        <li><a href="fmrConsultarAgenteOnb.php">Reporte Agente Onboarding</a></li>         
+                        <li><a href="fmrConsultarComercial.php">Reporte Comercial </a></li>
+                        <li><a href="fmrConsutarOnboarding.php">Reporte Onboarding </a></li>
+                        <li><a href="fmrConsultarPos.PHP">Reporte Pos</a></li>
+                                           
+                        </ul>
+                        </li>
+                        <li><a href="fmrUsuario.php" >Crea usuario</a> </li>
+                         
+                        <li><a href="../../index.php">Salir</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+         </header>
+    <br>
+    
     <form class="formulario" action="../../Logica/registrarUsuario.php" method="POST">
 
         <h1>REGISTRAR USUARIO</h1>
