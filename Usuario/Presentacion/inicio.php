@@ -1,12 +1,4 @@
-<?php
-session_start();
-if (!isset($_SESSION ['administrador'])) {
-    header("location:../../index.php?x=2");
-}
-if (!isset($_REQUEST ['pg'])) {
-    $pg = "pginicial";
-}
-?>
+
 
 <!DOCTYPE html>
 <html lang="es">
@@ -41,7 +33,7 @@ if (!isset($_REQUEST ['pg'])) {
                         <li><a >Restaurante</a>
                         <ul>   
                         <li><a href="fmrRestaurante.php">Crear Restaurante</a></li>
-                        <li><>Consultar Restaurante</li>
+                        <li><a href="fmrConsultarRestaurante.php">Consultar Restaurante</a></li>
                         </ul>
                         </li>
                                                    

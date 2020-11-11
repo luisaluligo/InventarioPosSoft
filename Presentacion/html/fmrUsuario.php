@@ -74,7 +74,8 @@
                         <li><a href="fmrConsultarComercial.php">Reporte Comercial </a></li>
                         <li><a href="fmrConsutarOnboarding.php">Reporte Onboarding </a></li>
                         <li><a href="fmrConsultarPos.PHP">Reporte Pos</a></li>
-                                           
+                         <li><a href="fmrConsultarRestaurante.php.">Reporte Restaurante</a></li>
+                                                
                         </ul>
                         </li>
                         <li><a href="fmrUsuario.php" >Crea usuario</a> </li>

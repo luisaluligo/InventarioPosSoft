@@ -4,17 +4,15 @@ require_once '../../Datos/Conexion.php';
 
 
 $objConexion = Conectarse() ;
-$sql ="SELECT * FROM comercial ";
+$sql ="SELECT * FROM restaurante ";
 $resultado = $objConexion->query($sql);
-
 ?>
 
 
 
-
-<!doctype html>
-<html lang="es">
-	<head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 		<!-- Required meta tags -->
                 
 		<meta charset="utf-8">
@@ -43,8 +41,9 @@ $resultado = $objConexion->query($sql);
 		
 		
 	</head>
-	<body>
-            <header> 
+
+<body>
+<header> 
      <div id="header">
                 <nav>
                     <ul class="nav">
@@ -82,46 +81,55 @@ $resultado = $objConexion->query($sql);
                 </nav>
             </div>
   </header>
-           <br>
+    
             <br>
             <br>
             <br>
-            
-		<div class="container">
+<!-- <div id='seleccion' >
+		<div class="full-width divider-menu-h"></div>
+		<div class="mdl-grid">
+			<div class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--12-col-desktop"> -->
+           <div class="container">
 			<div class="row">
-				<h1>Comercial</h1>
-			</div>
-			
-			
-                    
-			
-			<table id="tabla" class="display">
-				<thead>
-					<tr>
-			                 
-                                         <th>NombreComercial</th>
-                                         <th>ApellidoComercial</th>
-                                         <th>CedulaComercial</th>
-                                         
-					</tr>
-				</thead>
-				<tbody>
-					<?php while($fila = $resultado->fetch_assoc()) { ?>
-						<tr>
+				<h1>Restaurante</h1>
+			</div>	
+            <table id="tabla" class="display" > 
+					<thead>
+				<tr>
+                            
+		            <th>RestNombre</th>
+			    <th>RestEspecialidad</th>
+			    <th>RestComercial</th>                        
+                            <th>RestPos</th> 
+                            
 							
-							<td><?php echo $fila['ComNombre']; ?></td>
-							<td><?php echo $fila['ComApellido']; ?></td>
-                                                        <td><?php echo $fila['ComCedula']; ?></td>
-                                                        
-						</tr>
-					<?php } ?>
+				</tr>
+                                
+                                
+                                </thead>
+				<tbody>
+					<?php while($row = $resultado->fetch_assoc()) { ?>
+						<tr>
+
+                
+                <td> <?php  echo $row ['RestNombre']; ?></td>
+                <td> <?php  echo $row ['RestEspecialidad']; ?></td>
+                <td> <?php  echo $row ['RestComercial']; ?></td>
+                <td> <?php  echo $row ['RestPos']; ?></td>
+          
+              
+                
+                	
+            </tr>
+             <?php } ?>
 				</tbody>
 			</table>
-                    <br>
-                    <a class="btn btn-primary btn-lg" href="../Logica/exportarExcelComercial.php">exportar-excel</a>
+			<a class="btn btn-primary btn-lg" href="../Logica/exportarExcelRestaurante.php">exportar-excel</a>
 		</div>
-	 <footer> Copyrigth -todos los drechos reservados ADSI 2.0 </footer>
-	
-	
+        <footer> Copyrigth -todos los derechos reservados ADSI 2.0 </footer>
+    
 </body>
-</html>					
+</html>
+
+
+

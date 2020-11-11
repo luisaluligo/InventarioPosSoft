@@ -67,7 +67,8 @@ $fila = $resultado->fetch_assoc();
                         <li><a href="fmrConsultarComercial.php">Reporte Comercial </a></li>
                         <li><a href="fmrConsultarOnboarding.php">Reporte Onboarding </a></li>
                         <li><a href="fmrConsultarPos.PHP">Reporte Pos</a></li>
-                                           
+                         <li><a href="fmrConsultarRestaurante.php.">Reporte Restaurante</a></li>
+                                                
                         </ul>
                         </li>
                         <li><a href="../../index.php">Salir</a></li>

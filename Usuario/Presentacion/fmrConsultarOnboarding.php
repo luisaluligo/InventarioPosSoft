@@ -67,7 +67,7 @@ $resultado = $objConexion->query($sql);
                         <li><a >Restaurante</a>
                         <ul>   
                         <li><a href="fmrRestaurante.php">Crear Restaurante</a></li>
-                        <li><>Consultar Restaurante</li>
+                        <li><a href="fmrConsultarRestaurante.php">Consultar Restaurante</a></li>
                         </ul>
                         </li>
                                                    
