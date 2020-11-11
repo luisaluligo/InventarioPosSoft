@@ -118,9 +118,8 @@
              <input type="submit" value="Guardar registro" class="btn btn-secondary btn-lg" onclick="return confirmar()">
              <a href="..inicio.html" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">Regresar</a>
        <!--       <a href="../PHP/borrarRestaurante.php" class="btn btn-danger btn-lg" tabindex="-1" role="button" aria-disabled="true">Borrar</a> -->
-             <a href="listarRestaurante.php" class="btn btn-danger btn-lg" tabindex="-1" role="button" aria-disabled="true">Listado</a>
-             <!-- <input type="submit" value="borrar registro" class="btn btn-danger btn-lg"onclick="return confirmar()"> -->
-            </center>
+             </center>
+             <br>
          </div>
         </form>
 

@@ -81,7 +81,8 @@
                         <li><a href="fmrConsultarComercial.php">Reporte Comercial </a></li>
                         <li><a href="fmrConsultarOnboarding.php">Reporte Onboarding </a></li>
                         <li><a href="fmrConsultarPos.PHP">Reporte Pos</a></li>
-                                           
+                         <li><a href="fmrConsultarRestaurante.php.">Reporte Restaurante</a></li>
+                                                
                         </ul>
                         </li>
                         <li><a href="../../index.php">Salir</a></li>
@@ -136,8 +137,8 @@
 	</table>
 	
                     <a class="btn btn-primary btn-lg" href="../../Logica/exportarExcelPos.php">exportar-excel</a>
-    
-
+    </div>
+        <footer> Copyrigth -todos los derechos reservados ADSI 2.0 </footer>
 
 </body>
 </html>

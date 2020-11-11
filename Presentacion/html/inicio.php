@@ -1,12 +1,3 @@
-<?php
-session_start();
-if (!isset($_SESSION ['usuario'])) {
-    header("location:../../index.php?x=2");
-}
-if (!isset($_REQUEST ['pg'])) {
-    $pg = "pginicial";
-}
-?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -63,6 +54,7 @@ if (!isset($_REQUEST ['pg'])) {
                         <li><a href="fmrConsultarComercial.php">Reporte Comercial </a></li>
                         <li><a href="fmrConsutarOnboarding.php">Reporte Onboarding </a></li>
                         <li><a href="fmrConsultarPos.PHP">Reporte Pos</a></li>
+                        <li><a href="fmrConsultarRestaurante.php.">Reporte Restaurante</a></li>
                                            
                         </ul>
                         </li>
