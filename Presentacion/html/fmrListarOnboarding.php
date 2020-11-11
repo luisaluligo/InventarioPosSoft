@@ -106,7 +106,7 @@ $resultado = $objConexion->query($sql);
             
 		<div class="container">
 			<div class="row">
-				<h1>Onboaarding</h1>
+				<h1>Onboarding</h1>
 			</div>
 			
 			
